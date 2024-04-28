@@ -1,9 +1,8 @@
-# Respawn
+# SoftThorn.Respawn
 
-![CI](https://github.com/jbogard/Respawn/workflows/CI/badge.svg)
-[![NuGet](https://img.shields.io/nuget/dt/respawn.svg)](https://www.nuget.org/packages/respawn) 
-[![NuGet](https://img.shields.io/nuget/vpre/respawn.svg)](https://www.nuget.org/packages/respawn)
-[![MyGet (dev)](https://img.shields.io/myget/respawn-ci/v/respawn.svg)](https://myget.org/gallery/respawn-ci)
+[![NuGet](https://img.shields.io/nuget/vpre/respawn.svg)](https://www.nuget.org/packages/SoftThorn.Respawn)
+
+**NOTE:** This is a fork from the official [Respawn](https://github.com/jbogard/Respawn), that only includes this [PR](https://github.com/jbogard/Respawn/issues/135)
 
 Respawn is a small utility to help in resetting test databases to a clean state. Instead of deleting data at the end of a test or rolling back a transaction, Respawn [resets the database back to a clean, empty state](http://lostechies.com/jimmybogard/2013/06/18/strategies-for-isolating-the-database-in-tests/) by intelligently deleting data from tables.
 

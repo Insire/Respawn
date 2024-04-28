@@ -6,7 +6,7 @@
     <Authors>Jimmy Bogard</Authors>
     <TargetFrameworks>netstandard2.1</TargetFrameworks>
     <AssemblyName>Respawn</AssemblyName>
-    <PackageId>Respawn</PackageId>
+    <PackageId>SoftThorn.Respawn</PackageId>
     <PackageTags>tests;integration tests;database tests</PackageTags>
     <LangVersion>latest</LangVersion>
     <MinVerTagPrefix>v</MinVerTagPrefix>
@@ -19,10 +19,20 @@
     <Deterministic>true</Deterministic>
     <ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>SoftThorn.Respawn</Title>
+    <PackageProjectUrl>https://github.com/Insire/Respawn/tree/master</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Insire/Respawn</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
     <None Include="..\logo.png" Pack="true" PackagePath="" />
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
